@@ -6,5 +6,6 @@ print("Number of subjects:",len(marks))
 for score in marks:
     print("Score:",score)
 
-marks.append(95)
-marks.insert(0,99)
+marks.append(95) # Adding a new score
+marks.insert(0,99) # Inserting a score at the beginning
+marks.clear( ) # Clearing all scores
