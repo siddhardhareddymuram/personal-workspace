@@ -1,6 +1,10 @@
-sentence=input("Enter a sentence:")
-words=sentence.split()
-word_count=[]
-for i in words:
-    word_count.append((i, len(i)))
-print(word_count)
+sentence=input("Enter the Sentence: ")
+freq={}
+n=len(sentence)
+for i in range(n):
+    if sentence[i] in freq:
+        freq[sentence[i]]+=1
+    else:
+        freq[sentence[i]]=1
+
+print(freq)
